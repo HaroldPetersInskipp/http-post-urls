@@ -16,4 +16,4 @@ First, install a plugin that enables UserScript. There are several plugins for e
 - Chrome or Firefox: [Tampermonkey](https://www.tampermonkey.net/)
 - Firefox: [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/)
 
-Then, [click here to install](https://github.com/HaroldPetersInskipp/http-post-urls/raw/master/script.js).
+Then, [click here to install](https://github.com/HaroldPetersInskipp/http-post-urls/raw/master/script/script.user.js).
