@@ -5,4 +5,5 @@ With Greasemonkey you may need to replace GM_xmlhttpRequest with GM.xmlHttpReque
 
 # Important
 You must edit the <code>server</code> variable in <code>script.js</code> with your server endpoint.
+
 For example <code>"http://192.168.1.999:1880/firefox"</code>
