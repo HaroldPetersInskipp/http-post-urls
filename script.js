@@ -9,7 +9,7 @@
 // @copyright    2022+, HaroldPetersInskipp (https://github.com/HaroldPetersInskipp)
 // @license      MIT; https://github.com/HaroldPetersInskipp/http-post-urls/blob/main/LICENSE
 // @match        *://*/*
-// @icon         https://raw.githubusercontent.com/HaroldPetersInskipp/YouTube-AFS/main/icon.png
+// @icon         https://raw.githubusercontent.com/HaroldPetersInskipp/http-post-urls/main/icon.png
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
 
