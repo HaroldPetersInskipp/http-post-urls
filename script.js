@@ -1,14 +1,18 @@
 // ==UserScript==
-// @name         http-post-urls
+// @name         Log URLs
 // @namespace    https://github.com/HaroldPetersInskipp/
-// @version      0.1
-// @homepage     https://github.com/HaroldPetersInskipp/http-post-urls
+// @version      0.2
+// @homepageURL  https://github.com/HaroldPetersInskipp/http-post-urls
+// @supportURL   https://github.com/HaroldPetersInskipp/http-post-urls/issues
 // @description  POST all URL's visited to a local server
 // @author       Inskipp
-// @include      *://*
-// @icon         https://raw.githubusercontent.com/HaroldPetersInskipp/http-post-urls/main/icon.png
+// @copyright    2022+, HaroldPetersInskipp (https://github.com/HaroldPetersInskipp)
+// @license      MIT; https://github.com/HaroldPetersInskipp/http-post-urls/blob/main/LICENSE
+// @match        *://*/*
+// @icon         https://raw.githubusercontent.com/HaroldPetersInskipp/YouTube-AFS/main/icon.png
 // @grant        GM_xmlhttpRequest
 // ==/UserScript==
+
 (function() {
     'use strict';
     let server = "http://IPADDRESS:PORT/ENDPOINT"; // REPLACE THIS WITH YOUR SERVER INFO (example "http://192.168.1.999:1880/firefox")
