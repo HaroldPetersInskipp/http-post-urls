@@ -55,15 +55,20 @@
     // Initial call to GetURL() when the script is executed
     GetURL();
 
-    // Check for URL and history state changes
-    window.onpopstate = function () {
-        address = location.href;
-        GetURL();
-    };
-
-    window.onhashchange = function () {
-        address = location.href;
-        GetURL();
-    };
+    // Set up an interval to continuously check for URL and history state changes
+    setInterval(function() {
+        if (previousState !== window.history.state) {
+            // Update history state and address if there's a change
+            previousState = window.history.state;
+            address = location.href;
+            GetURL();
+        };
+        if (hash !== window.location.hash) {
+            // Update hash and address if there's a change
+            hash = window.location.hash;
+            address = location.href;
+            GetURL();
+        };
+    }, 2000); // Interval set to 2000 milliseconds (2 seconds)
 
 })();
