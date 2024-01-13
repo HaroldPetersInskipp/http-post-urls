@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Log URLs
 // @namespace    https://github.com/HaroldPetersInskipp/
-// @version      0.2
+// @version      0.3
 // @homepageURL  https://github.com/HaroldPetersInskipp/http-post-urls
 // @supportURL   https://github.com/HaroldPetersInskipp/http-post-urls/issues
 // @description  POST all URL's visited to a local server
