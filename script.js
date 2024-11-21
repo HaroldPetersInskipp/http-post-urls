@@ -1,16 +1,16 @@
 // ==UserScript==
 // @name         Log URLs
 // @namespace    https://github.com/HaroldPetersInskipp/
-// @version      0.4
+// @version      0.4.1
 // @homepageURL  https://github.com/HaroldPetersInskipp/http-post-urls
 // @supportURL   https://github.com/HaroldPetersInskipp/http-post-urls/issues
 // @description  POST all URLs visited to a local server, excluding local files
 // @author       Inskipp
-// @copyright    2022+, HaroldPetersInskipp (https://github.com/HaroldPetersInskipp)
+// @copyright    2024+, HaroldPetersInskipp (https://github.com/HaroldPetersInskipp)
 // @license      MIT; https://github.com/HaroldPetersInskipp/http-post-urls/blob/main/LICENSE
 // @match        *://*/*
-// @icon         https://raw.githubusercontent.com/HaroldPetersInskipp/http-post-urls/main/icon.png
 // @grant        GM_xmlhttpRequest
+// @icon         https://raw.githubusercontent.com/HaroldPetersInskipp/http-post-urls/main/icon.png
 // ==/UserScript==
 
 // Wrap the entire script in an immediately-invoked function expression (IIFE) for better encapsulation
