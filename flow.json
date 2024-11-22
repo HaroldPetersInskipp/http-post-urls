@@ -1,0 +1,205 @@
+[
+    {
+        "id": "74ec266a4dce6944",
+        "type": "http in",
+        "z": "1540ac82c636ea50",
+        "name": "",
+        "url": "/firefox",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 90,
+        "y": 280,
+        "wires": [
+            [
+                "11d8ea58f48f31b6",
+                "a426dede931c6d37"
+            ]
+        ]
+    },
+    {
+        "id": "11d8ea58f48f31b6",
+        "type": "change",
+        "z": "1540ac82c636ea50",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "success",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 300,
+        "y": 280,
+        "wires": [
+            [
+                "14c08e65804dea2a"
+            ]
+        ]
+    },
+    {
+        "id": "14c08e65804dea2a",
+        "type": "http response",
+        "z": "1540ac82c636ea50",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 470,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "a426dede931c6d37",
+        "type": "rbe",
+        "z": "1540ac82c636ea50",
+        "name": "",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": false,
+        "property": "payload",
+        "topi": "topic",
+        "x": 110,
+        "y": 220,
+        "wires": [
+            [
+                "4c9bd07a4b7101a4"
+            ]
+        ]
+    },
+    {
+        "id": "4c9bd07a4b7101a4",
+        "type": "switch",
+        "z": "1540ac82c636ea50",
+        "name": "blocker",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "cont",
+                "v": "https://www.youtube.com/embed/?",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "https://www.youtube.com/embed/",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "https://www.youtube.com/shorts/",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "https://www.youtube.com/watch?v=",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "https://old.reddit.com/chat/minimize",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "https://hangouts.google.com/",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "https://0.client-channel.google.com/client-channel/client",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "https://ogs.google.com/u/0/widget/",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "https://appsgrowthpromo",
+                "vt": "str"
+            },
+            {
+                "t": "cont",
+                "v": "https://www.google.com/recaptcha/enterprise/",
+                "vt": "str"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 11,
+        "x": 280,
+        "y": 180,
+        "wires": [
+            [],
+            [
+                "577e037dcfdd6acd"
+            ],
+            [
+                "577e037dcfdd6acd"
+            ],
+            [
+                "7a39f234951eca6b",
+                "3a5a986e4b31754c",
+                "577e037dcfdd6acd"
+            ],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [],
+            [
+                "7a39f234951eca6b"
+            ]
+        ]
+    },
+    {
+        "id": "7a39f234951eca6b",
+        "type": "file",
+        "z": "1540ac82c636ea50",
+        "name": "",
+        "filename": "C:/Users/Bannd/Downloads/Cryo/FirefoxURL.log",
+        "filenameType": "str",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 600,
+        "y": 240,
+        "wires": [
+            [
+                "2c4f8f3e980ef7e9"
+            ]
+        ]
+    },
+    {
+        "id": "2c4f8f3e980ef7e9",
+        "type": "debug",
+        "z": "1540ac82c636ea50",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 240,
+        "wires": []
+    }
+]
