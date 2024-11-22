@@ -1,5 +1,5 @@
 # http-post-urls
-Userscript to POST all URL's visited to a local server. For use with Tampermonkey and a local Node-RED server.
+Userscript to POST all URL's visited to a local server. For use with Tampermonkey and a local [Node-RED](https://nodered.org/docs/getting-started/) server.
 
 With Greasemonkey you may need to replace GM_xmlhttpRequest with GM.xmlHttpRequest (untested).
 
