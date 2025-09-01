@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name         Log URLs
 // @namespace    https://github.com/HaroldPetersInskipp/
-// @version      0.4.1
+// @version      0.4.2
 // @homepageURL  https://github.com/HaroldPetersInskipp/http-post-urls
 // @supportURL   https://github.com/HaroldPetersInskipp/http-post-urls/issues
+// @downloadURL  https://gist.github.com/HaroldPetersInskipp/7476f0d7c9512b80b90211c0b5b90663/raw/http-post-urls.user.js
+// @updateURL    https://gist.github.com/HaroldPetersInskipp/7476f0d7c9512b80b90211c0b5b90663/raw/http-post-urls.user.js
 // @description  POST all URLs visited to a local server, excluding local files
 // @author       Inskipp
 // @copyright    2024+, HaroldPetersInskipp (https://github.com/HaroldPetersInskipp)
